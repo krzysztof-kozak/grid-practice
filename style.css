@@ -1,0 +1,32 @@
+/* settings */
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+main {
+  border: 5px solid red;
+  min-height: 100vh;
+  padding: 1rem;
+}
+
+/* grid sandbox */
+
+.grid {
+  display: grid;
+  grid-template-columns: 50% 30%;
+}
+
+.grid__element {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid black;
+  padding: 1rem;
+  margin: 1rem;
+}
