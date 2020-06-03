@@ -39,7 +39,7 @@ h2 {
 }
 
 .header {
-  grid-area: header;
+  grid-area: 1 / first / 2 / span 3;
   background-color: #2196f3;
 }
 
@@ -51,10 +51,8 @@ h2 {
 }
 
 .aside {
-  grid-area: aside;
   background-color: #9ccc65;
-  grid-column-start: second;
-  grid-column-end: span 2;
+  grid-area: 2 / third / 3 / fourth;
 }
 
 .footer {
