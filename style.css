@@ -34,6 +34,12 @@ h2 {
   background-color: #2196f3;
 }
 
+.mobile {
+  color: #f44336;
+  border: 1px groove black;
+  text-align: center;
+}
+
 .article {
   grid-area: article;
   background-color: #ffee58;
@@ -61,5 +67,8 @@ h2 {
     grid-template-columns: [first] minmax(250px, 2fr) [second] 40px [third] 1fr [fourth];
     max-width: 700px;
     margin: 1rem auto;
+  }
+  .mobile {
+    display: none;
   }
 }
