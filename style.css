@@ -31,7 +31,7 @@ h2 {
     "header header header"
     "article . aside"
     "footer footer footer";
-  grid-template-columns: minmax(250px, 2fr) 40px 1fr;
+  grid-template-columns: [first] minmax(250px, 2fr) [second] 40px [third] 1fr [fourth];
 }
 
 .grid__item {
@@ -46,11 +46,15 @@ h2 {
 .article {
   grid-area: article;
   background-color: #ffee58;
+  grid-column-start: first;
+  grid-column-end: first;
 }
 
 .aside {
   grid-area: aside;
   background-color: #9ccc65;
+  grid-column-start: second;
+  grid-column-end: span 2;
 }
 
 .footer {
