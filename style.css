@@ -25,15 +25,6 @@ h2 {
 
 /* grid sandbox */
 
-.grid {
-  display: grid;
-  grid-template-areas:
-    "header header header"
-    "article . aside"
-    "footer footer footer";
-  grid-template-columns: [first] minmax(250px, 2fr) [second] 40px [third] 1fr [fourth];
-}
-
 .grid__item {
   padding: 1rem;
 }
@@ -52,10 +43,23 @@ h2 {
 
 .aside {
   background-color: #9ccc65;
-  grid-area: 2 / third / 3 / fourth;
+  grid-area: 2 / second / 3 / fourth;
 }
 
 .footer {
   grid-area: footer;
   background-color: #263238;
+}
+
+@media screen and (min-width: 600px) {
+  .grid {
+    display: grid;
+    grid-template-areas:
+      "header header header"
+      "article . aside"
+      "footer footer footer";
+    grid-template-columns: [first] minmax(250px, 2fr) [second] 40px [third] 1fr [fourth];
+    max-width: 700px;
+    margin: 1rem auto;
+  }
 }
